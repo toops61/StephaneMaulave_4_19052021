@@ -13,11 +13,6 @@ button {
     outline: none!important;
 }
 
-a:hover {
-    text-decoration: none;
-    cursor: pointer;
-}
-
 #page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
@@ -54,6 +49,59 @@ a:hover {
 
 .bloc-sm {
     padding: 20px 50px;
+}
+
+.bloc__presentation {
+    width: 58%;
+    margin: 1rem auto;
+}
+
+@media (max-width: 767px) {
+    .bloc__presentation {
+        width: 80%;
+    }
+}
+
+.bloc__presentation p {
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.bloc__citation {
+    width: 48%;
+    margin: 1rem auto;
+}
+
+@media (max-width: 767px) {
+    .bloc__citation {
+        width: 80%;
+    }
+}
+
+.bloc__citation p {
+    font-size: 2rem;
+    text-align: center;
+    font-style: italic;
+}
+
+.bloc__citation h4 {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.bloc-4__title {
+    width: 42%;
+    margin: 1rem auto;
+}
+.bloc-4__title p {
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .bloc-4__title {
+        width: 84%;
+    }
 }
 
 .bg-center,
@@ -740,7 +788,7 @@ h4 {
 }
 
 .portfolio-thumb {
-    margin-bottom: 24px;
+    margin: 2rem auto;
 }
 
 .portfolio-row {
@@ -818,11 +866,11 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
+    background-image: url("img/la-chouette-agence-banniere.webp");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.webp");
 }
 
 @media (max-width: 1024px) {
