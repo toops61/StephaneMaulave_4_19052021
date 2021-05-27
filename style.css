@@ -13,6 +13,10 @@ button {
     outline: none!important;
 }
 
+a:focus {
+    border: solid blue 2px;
+}
+
 #page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
@@ -92,6 +96,7 @@ button {
 #bloc-0 img {
     width: auto;
     height: 40px;
+    margin-left: 2rem;
 }
 
 .bloc-4__title {
@@ -150,8 +155,9 @@ button {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background: url("img/texture-paper.webp");
     background-size: 280px 280px;
+    opacity: .8;
 }
 
 .b-parallax {
@@ -366,7 +372,6 @@ button {
 }
 
 .navbar-brand img {
-    max-height: 200px;
     margin: 0 5px 0 0;
     display: inline;
 }
@@ -618,6 +623,7 @@ a[data-lightbox]:hover::before {
     z-index: 1;
     position: absolute;
     top: 50%;
+    left: 50%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
 }
@@ -809,19 +815,21 @@ h4 {
     color: #FFFFFF!important;
 }
 
-.portfolio-thumb {
-    margin: 2rem auto;
+@media (max-width:767px) {
+    .col-sm-6 {
+        width: 70%;
+        margin: 0 auto;
+    }
 }
 
-@media (max-width: 767px) {
-    .portfolio-thumb {
-        width: 70%;
-    }
-}
-@media (max-width: 400px) {
-    .portfolio-thumb {
+@media (max-width:400px) {
+    .col-sm-6 {
         width: 100%;
     }
+}
+
+.portfolio-thumb {
+    margin: 2rem auto;
 }
 
 .portfolio-row {
@@ -891,11 +899,11 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg.png");
+    background-image: url("img/dots-bg.webp");
 }
 
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
+    background-image: url("img/lines-h2-bg.webp");
 }
 
 .bg-banniere {
@@ -957,10 +965,6 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -969,8 +973,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
