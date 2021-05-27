@@ -89,6 +89,11 @@ button {
     text-align: center;
 }
 
+#bloc-0 img {
+    width: auto;
+    height: 40px;
+}
+
 .bloc-4__title {
     width: 42%;
     margin: 1rem auto;
@@ -96,6 +101,12 @@ button {
 .bloc-4__title p {
     font-size: 2.2rem;
     text-align: center;
+}
+
+#bloc-4-portfolio img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 @media (max-width: 767px) {
@@ -333,6 +344,11 @@ button {
 
 #bloc-1-hero h1 {
     font-size: 32px;
+}
+
+#bloc-1-hero img {
+    width: 100px;
+    height: 100px;
 }
 
 .navbar {
