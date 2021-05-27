@@ -380,6 +380,10 @@ button {
     text-align: inherit;
 }
 
+.navbar-nav li:hover {
+    border-bottom: solid black;
+}
+
 .nav > li a:hover,
 .nav > li a:focus {
     background: transparent;
@@ -725,7 +729,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .tight-width-whitespace {
@@ -750,6 +754,8 @@ p {
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
+    display: flex;
+    justify-content: space-around;
 }
 
 h2 {
@@ -791,6 +797,17 @@ h4 {
     margin: 2rem auto;
 }
 
+@media (max-width: 767px) {
+    .portfolio-thumb {
+        width: 70%;
+    }
+}
+@media (max-width: 400px) {
+    .portfolio-thumb {
+        width: 100%;
+    }
+}
+
 .portfolio-row {
     margin-bottom: 44px;
     margin-top: 50px;
@@ -801,7 +818,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(80, 69, 39, 0.8);
     padding: 40px 40px 40px 40px;
 }
 
@@ -819,20 +836,20 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #B2562B;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #FFF!important;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #B2562B;
     color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
+    background: #F3976C!important;
     color: #FFFFFF!important;
 }
 
@@ -871,6 +888,10 @@ h4 {
 
 .bg-presentation {
     background-image: url("img/image-de-presentation.webp");
+}
+
+#bloc-8 {
+    padding-bottom: 2rem;
 }
 
 @media (max-width: 1024px) {
