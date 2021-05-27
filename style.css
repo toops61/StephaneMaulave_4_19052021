@@ -66,8 +66,7 @@ a:focus {
     }
 }
 
-.bloc__presentation p {
-    font-size: 2.2rem;
+.bloc__presentation h2 {
     text-align: center;
 }
 
@@ -103,8 +102,7 @@ a:focus {
     width: 42%;
     margin: 1rem auto;
 }
-.bloc-4__title p {
-    font-size: 2.2rem;
+.bloc-4__title h2 {
     text-align: center;
 }
 
@@ -941,13 +939,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
