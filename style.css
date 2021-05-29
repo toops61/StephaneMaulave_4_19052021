@@ -13,7 +13,7 @@ button {
     outline: none!important;
 }
 
-a:focus {
+a:focus, button:focus {
     border: solid blue 2px;
 }
 
@@ -116,6 +116,21 @@ a:focus {
     .bloc-4__title {
         width: 84%;
     }
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact {
+    text-align: center;
+    font-size: 1.4rem;
+    border: solid green;
+}
+
+.column div {
+    width: 100%;
 }
 
 .bg-center,
@@ -724,6 +739,10 @@ a {
     font-family: "helvetica";
     font-weight: 400;
     color: #575757!important;
+}
+
+.fa-chevron-up::before {
+    color: #FFF;
 }
 
 .container {
