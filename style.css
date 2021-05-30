@@ -124,12 +124,12 @@ a:focus, button:focus {
 }
 
 .contact {
+    margin: 4rem auto 0 auto;
     text-align: center;
-    font-size: 1.4rem;
-    border: solid green;
+    font-size: 2rem;
 }
 
-.column div {
+.column div, #form_1 label {
     width: 100%;
 }
 
@@ -768,7 +768,7 @@ a {
 }
 
 p {
-    font-size: 14px;
+    font-size: 1.6rem;
 }
 
 .tight-width-whitespace {
@@ -795,6 +795,12 @@ p {
     margin: auto auto auto auto;
     display: flex;
     justify-content: space-around;
+}
+
+@media (max-width: 400px) {
+    .social {
+        max-width: 250px;
+    }
 }
 
 h2 {
